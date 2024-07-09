@@ -1,0 +1,116 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.header i {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card .options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card .option {
+  background-color: #ffcc80;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .option:hover {
+  background-color: #ffb74d;
+}
+
+.card .option:disabled {
+  background-color: #ffcc80;
+  cursor: not-allowed;
+}
+
+.button {
+  background-color: orange;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #ff9800;
+}
+
+.button:disabled {
+  background-color: #ffcc80;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.button:active {
+  background-color: #e67e22;
+}
